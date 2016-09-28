@@ -97,6 +97,11 @@ public class GameTrackerController {
         return "redirect:/";
     }
 
+    @RequestMapping(path = "/games", method = RequestMethod.GET)
+    public String games(Model model, HttpSession session) {
+        return "games";
+    }
+
 
 
 }
